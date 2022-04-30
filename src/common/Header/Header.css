@@ -1,0 +1,11 @@
+a.nav-link.link {
+    font-family: 'poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: black!important;
+}
+a.nav-link.link:hover{
+    transition: .5s;
+    background-color: orangered;
+    color: rgb(229, 203, 32)!important;
+}
