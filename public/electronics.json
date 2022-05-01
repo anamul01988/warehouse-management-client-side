@@ -6,7 +6,7 @@
         "quantity" : "20",
         "supplier_name": "Rahim Mia",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "quantity" : "30",
         "supplier_name": "Ismail Gazi",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "quantity" : "50",
         "supplier_name": "Kashem Ali",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@
         "quantity" : "70",
         "supplier_name": "Abdul Zalil",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "quantity" : "10",
         "supplier_name": "Rahmat Mia",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     },
     {
         "id": 6,
@@ -51,6 +51,6 @@
         "quantity" : "50",
         "supplier_name": "Anamul Haque",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
     }
 ]
