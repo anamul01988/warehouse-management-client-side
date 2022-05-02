@@ -22,19 +22,14 @@ const Register = () => {
        const email = emailRef.current.value;
        const pass = passRef.current.value;
        const confirmPass = confirmPassRef.current.value;
-    //   const userName = event.target.name.value;
-    //   const email = event.target.email.value;
-    //   const pass = event.target.password.value;
-    //   const confirmPass = event.target.confirmPassword.value;
-
        console.log(userName, email, pass, confirmPass)
        createUserWithEmailAndPassword(email, pass);
     }
 
  
       if(user){
-         navigate('/login');
-        // console.log('user', user)
+         
+        console.log('user', user)
     }
 
   return (
@@ -46,10 +41,8 @@ const Register = () => {
             ref={userNameRef}
             className="form-control"
             placeholder="User-name"
-            name="name"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
-            required
           />    
         </div>
         <div className="mb-3">
@@ -58,10 +51,8 @@ const Register = () => {
             ref={emailRef}
             className="form-control"
             placeholder="email@gmail.com"
-            name="email"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
-            required
           />    
         </div>
         <div className="mb-3">
@@ -70,9 +61,7 @@ const Register = () => {
             ref={passRef}
             className="form-control"
             placeholder="password"
-            name="password"
             id="exampleInputPassword1"
-            required
           />
         </div>
         <div className="mb-3">
@@ -81,9 +70,7 @@ const Register = () => {
             ref={confirmPassRef}
             className="form-control"
             placeholder="confirm-password"
-            name="confirmPassword"
             id="exampleInputPassword1"
-            required
           />
         </div>
         <p>Already have an account? <Link to='/login' className="text-primary pointer-cursor pe-auto text-decoration-none" >Please Login</Link></p>
@@ -93,10 +80,8 @@ const Register = () => {
           <label className="form-check-label" for="exampleCheck1">
              Accept Terms & Conditions.
           </label>
-           
-        
         </div>
-        <button type="submit" className="btn btn-primary" >
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>
