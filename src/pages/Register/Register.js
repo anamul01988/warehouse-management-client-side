@@ -4,7 +4,8 @@ import { Link,  useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from "../../common/Loading/Loading";
-import { updateProfile } from "firebase/auth";
+import SocialLogin from "../Login/SocialLogin";
+
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -16,10 +17,18 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
+        loading
       ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
       const [updateProfile, updating] = useUpdateProfile(auth);
+      if(loading || updating ){
+        console.log('loading')
+        return <Loading/>
+      }
+    //  if(user){
+    //       //  navigate('/login');
+    //       console.log('user', user)
+    //   }
+    
 
     // const handleRegisterSubmit =(event)=>{
     //    event.preventDefault();
@@ -36,14 +45,7 @@ const Register = () => {
     //    createUserWithEmailAndPassword(email, pass);
     // }
 
-    if(loading || updating ){
-      return <Loading/>
-    }
-      if(user){
-        //  navigate('/login');
-        console.log('user', user)
-    }
-  
+
 
     const handleRegisterForm = async(event) =>{
       event.preventDefault();
@@ -57,6 +59,11 @@ const Register = () => {
       await updateProfile({ displayName: name });
       console.log('Updated profile');
       navigate('/');
+    }
+
+    if(user){
+      console.log('user',user)
+        // navigate('/home')
     }
 
   return (
@@ -74,7 +81,7 @@ const Register = () => {
    <input disabled={!agree}  className='w-50 mx-auto btn bg-warning mt-3 ' type="submit" value='Register' />
 </form>
 <p>Already have an account? <Link to='/login' className="text-primary pointer-cursor pe-auto text-decoration-none" >Please Login</Link></p>
-{/* <SocialLogin/> */}
+<SocialLogin/>
 
 </div>
 </div>

@@ -1,0 +1,8 @@
+.social-btn button{
+    width: 50%;
+}
+@media only screen and (max-width: 500px) {
+     .social-btn button{
+         width: 100%;
+     }
+  }

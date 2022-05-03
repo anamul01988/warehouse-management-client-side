@@ -45,25 +45,53 @@ const Header = () => {
                 </Link>
               </li> */}
               {user ? (
-                <li className="nav-item">
-                  <Link onClick={handleSignOut} className="nav-link link" to="login">
-                    Sign Out
-                  </Link>
-                </li>
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link link" to="manage_items">
+                      Manage Items
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link link" to="add_items">
+                      Add Items
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link link" to="my_items">
+                      My Items
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      onClick={handleSignOut}
+                      className="nav-link link"
+                      to="login"
+                    >
+                      Sign Out
+                    </Link>
+                  </li>
+                </>
               ) : (
-                <li className="nav-item">
-                  <Link className="nav-link link" to="login">
-                    Login
-                  </Link>
-                </li>
-                
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link link" to="login">
+                      Login
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link link" to="/register">
+                      Register
+                    </Link>
+                  </li>
+                </>
               )}
               {/* <li className="nav-item">
                 <Link className="nav-link link" to="/register">
                   Register
                 </Link>
               </li> */}
-              <li className="nav-item">
+
+              {/* <li className="nav-item">
                 <Link className="nav-link link" to="manage_items">
                   Manage Items
                 </Link>
@@ -77,7 +105,7 @@ const Header = () => {
                 <Link className="nav-link link" to="my_items">
                   My Items
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link link" to="blog">
                   Blog

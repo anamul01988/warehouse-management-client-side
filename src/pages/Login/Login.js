@@ -4,8 +4,10 @@ import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Loading from "../../common/Loading/Loading";
 import auth from "../../firebase.init";
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
      const navigate = useNavigate();
@@ -18,7 +20,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
     const handleLoginForm = (event) =>{
-        event.preventDefault();
+      event.preventDefault();
         const email = emailRef.current.value;
         const password = passRef.current.value;
         console.log(email, password)
@@ -43,6 +45,7 @@ const Login = () => {
     }
 
     if(user){
+      console.log(user)
         navigate('/home')
     }
     let errorElement;
@@ -54,7 +57,7 @@ const Login = () => {
 
   return (
     <div className="my-5">
-      <form onClick={handleLoginForm} className="w-50 mx-auto">
+      <form onSubmit={handleLoginForm} className="w-50 mx-auto">
         <div className="mb-3">
           <input
             type="email"
@@ -93,6 +96,7 @@ const Login = () => {
         <button type="submit" className="btn btn-primary">
           Login
         </button>
+        <SocialLogin />
       </form>
       <ToastContainer />
     </div>
