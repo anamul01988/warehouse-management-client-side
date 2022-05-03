@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { Button } from "react-bootstrap";
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import Loading from "../../common/Loading/Loading";
 import auth from "../../firebase.init";
 
 const Login = () => {
@@ -21,9 +24,34 @@ const Login = () => {
         console.log(email, password)
         signInWithEmailAndPassword(email, password)
     }
+
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+      auth
+    );
+    const resetPassword = async () => {
+      const email = emailRef.current.value;
+      if (email) {
+        await sendPasswordResetEmail(email);
+        toast("check your email");
+      } else {
+        toast("Please enter your email address");
+      }
+    };
+
+    if (loading || sending) {
+      return <Loading/>;
+    }
+
     if(user){
         navigate('/home')
     }
+    let errorElement;
+  if (error || error1) {
+    errorElement = <p className="text-danger">Error: {error?.message} {error1?.message} </p>;
+  }
+
+
+
   return (
     <div className="my-5">
       <form onClick={handleLoginForm} className="w-50 mx-auto">
@@ -46,7 +74,7 @@ const Login = () => {
             id="exampleInputPassword1"
           />
         </div>
-
+        {errorElement}
         <div className="login-content d-flex justify-content-between align-item-center">
           <p className="mt-1">
             New User?{" "}
@@ -59,13 +87,14 @@ const Login = () => {
           </p>
           <p>
             Forget Password?{" "}
-            <Button >Reset Password</Button>
+            <Button onClick={resetPassword} >Reset Password</Button>
           </p>
         </div>
         <button type="submit" className="btn btn-primary">
           Login
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
