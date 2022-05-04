@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Button } from "react-bootstrap";
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "../../common/Loading/Loading";
@@ -13,6 +13,8 @@ const Login = () => {
      const navigate = useNavigate();
     const emailRef = useRef('');
     const passRef = useRef('');
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const [
         signInWithEmailAndPassword,
         user,
@@ -45,8 +47,9 @@ const Login = () => {
     }
 
     if(user){
-      console.log(user)
-        navigate('/home')
+      // console.log(user)
+      //   navigate('/home')
+      navigate(from, {replace: true});
     }
     let errorElement;
   if (error || error1) {

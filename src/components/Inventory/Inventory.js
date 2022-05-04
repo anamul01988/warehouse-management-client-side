@@ -1,11 +1,18 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useProductDetail from "../../Hooks/useProductDetail";
 import "./Inventory.css";
 const Inventory = () => {
   const { inventoryId } = useParams();
   const [inventory] = useProductDetail(inventoryId);
+
+  const reducedQuantity= (quantity) =>{
+      console.log('added',quantity-1)
+      let quantities = quantity -1;
+      return quantities;
+   
+  }
   return (
     <div className="container">
       <div className="selected-product w-50 mx-auto my-5">
@@ -23,10 +30,13 @@ const Inventory = () => {
           </Card.Body>
 
           <Card.Body>
-            <Card.Link className="btn btn-primary">Delivered</Card.Link>
+            <Card.Link onClick={()=> reducedQuantity(inventory.quantity)} className="btn btn-primary">Delivered</Card.Link>
           </Card.Body>
         </Card>
       </div>
+       <div className="text-center py-5">
+       <Link to="/manage_inventory" className="btn btn-primary">Manage Inventory</Link>
+       </div>
     </div>
   );
 };
