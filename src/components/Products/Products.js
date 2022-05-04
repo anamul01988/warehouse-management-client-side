@@ -1,5 +1,6 @@
 
-import useProducts from '../../Hooks/useProducts/useProducts';
+
+import useProducts from '../../Hooks/useProducts';
 import Product from '../Product/Product';
 
 const Products = () => {
