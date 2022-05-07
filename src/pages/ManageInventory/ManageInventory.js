@@ -32,6 +32,7 @@ const ManageInventory = () => {
                   <td>
                     <img className="" src={product.img} alt="img" />
                   </td>
+                  <td>{product.price}</td>
                   <td>{product.supplier_name}</td>
                   <td>{product.short_description}</td>
                   <td>
