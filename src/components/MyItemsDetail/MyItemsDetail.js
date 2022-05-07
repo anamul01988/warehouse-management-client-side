@@ -3,25 +3,21 @@ import { Card } from "react-bootstrap";
 
 const MyItemsDetail = ({ item }) => {
   console.log(item);
-  const { name, img, quantity, price, short_description, supplier_name, sold, email } =
+  const { name, img, quantity, price, description, supplier_name, sold, email } =
     item;
   return (
  
-      <div className="col-lg-4 col-md-6 col-12 mx-auto">
-        <Card style={{ width: "18rem" }}>
+      <div className="col-lg-4 col-md-6 col-12 mx-auto shadow mb-4">
+        <Card className="" >
           <Card.Img variant="top" src={img} />
           <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text> {quantity}</Card.Text>
-            <Card.Text>$ {price}</Card.Text>
-            <Card.Text> {short_description}</Card.Text>
-            <Card.Text> {supplier_name}</Card.Text>
-            <Card.Text> {sold}</Card.Text>
-            <Card.Text> {email}</Card.Text>
-          </Card.Body>
-
-          <Card.Body>
-            {/* <Card.Link onClick={()=>navigateToServiceDetail(_id)} className="btn btn-primary">Stock Update</Card.Link> */}
+            <Card.Title>Name : {name}</Card.Title>
+            <Card.Text>Quantity :  {quantity}</Card.Text>
+            <Card.Text> Price : $ {price}</Card.Text>
+            <Card.Text>Desc : {description}</Card.Text>
+            <Card.Text>Supplier :  {supplier_name}</Card.Text>
+            <Card.Text>Sold :  {sold}</Card.Text>
+            <Card.Text>User-Mail :  {email}</Card.Text>
           </Card.Body>
         </Card>
       </div>

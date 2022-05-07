@@ -22,12 +22,3 @@ a.prd-btn.card-link:hover{
     color: black;
     transition: .5s;
 }
-a.prd-btn.inventory-btn {
-    padding: 20px 20px;
-    font-size: 24px;
-}
-a.prd-btn.inventory-btn:hover {
-    background-color: yellowgreen;
-    color: black;
-    transition: .5s;
-}

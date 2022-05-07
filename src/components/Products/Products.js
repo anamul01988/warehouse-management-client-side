@@ -9,8 +9,7 @@ const Products = () => {
     // console.log(products)
     return (
         <div className='container'>
-             <h3>{products.length}</h3>
-            <div className="row">
+            <div className="row my-4">
                {
                    products.slice(0,6).map(product => <Product key={product._id} product={product}/>)
                }

@@ -1,4 +1,5 @@
 import React from "react";
+import './Product.css';
 import { Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -10,22 +11,22 @@ const navigate = useNavigate();
        navigate(`/inventory/${id}`);
   }
   return (
-    <div className="col-md-4 col-12">
+    <div className=" col-lg-4 col-md-6 col-12">
       {/* <h1>{product.id}</h1>
             <h3>{product.name}</h3> */}
-      <Card style={{ width: "18rem" }}>
+            {/* style={{ width: "18rem" }} */}
+      <Card className="shadow mb-4 " >
         <Card.Img variant="top" src={img} />
-        <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Title>{_id}</Card.Title>
-          <Card.Text> {quantity }</Card.Text>
-          <Card.Text>$ {price }</Card.Text>
-          <Card.Text> {short_description }</Card.Text>
-          <Card.Text> {supplier_name }</Card.Text>
+        <Card.Body >
+          <Card.Title>Name : {name}</Card.Title>
+          <Card.Text>Quantity : {quantity }</Card.Text>
+          <Card.Text> Prcie : $ {price }</Card.Text>
+          <Card.Text> Desc :  {short_description }</Card.Text>
+          <Card.Text>Supplier : {supplier_name }</Card.Text>
         </Card.Body>
 
-        <Card.Body>
-          <Card.Link onClick={()=>navigateToServiceDetail(_id)} className="btn btn-primary">Stock Update</Card.Link>
+        <Card.Body className="mb-3">
+          <Card.Link onClick={()=>navigateToServiceDetail(_id)} className="prd-btn">Stock Update</Card.Link>
        
         </Card.Body>
       </Card>

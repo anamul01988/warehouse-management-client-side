@@ -1,7 +1,6 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import './ManageInventory.css';
 import { Link } from "react-router-dom";
-import Product from "../../components/Product/Product";
 import useProducts from "../../Hooks/useProducts";
 
 const ManageInventory = () => {
@@ -9,7 +8,13 @@ const ManageInventory = () => {
   console.log(products);
   return (
     <div className="container">
-      <h2>ManageInventory...</h2>
+     <div className="manageInventory-content  mt-5">
+     <h3 className="text-secondary mb-3">Manage Inventory Items </h3>
+      <div className="manageAdd text-center mb-5">
+          <Link className="prd-btn mt-5" to="/additem">Add New Item</Link>
+      </div>
+     </div>
+
       <div class="table-responsive">
         <table class="table align-middle">
           <thead>
@@ -58,9 +63,9 @@ const ManageInventory = () => {
         </table>
       </div>
       
-      <div className="manageAdd text-center mb-5">
+      {/* <div className="manageAdd text-center mb-5">
           <Link className="btn btn-primary" to="/additem">Add New Item</Link>
-      </div>
+      </div> */}
 
     </div>
   );

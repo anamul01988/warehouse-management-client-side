@@ -1,5 +1,6 @@
 
 import React from "react";
+import './ManageItems.css';
 import { Card } from "react-bootstrap";
 
 import useProducts from "../../Hooks/useProducts";

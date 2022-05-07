@@ -1,11 +1,4 @@
 
-p.card-text {
-    font-size: 18px;
-}
-img.card-img-top {
-    width: 317px;
-    height: auto;
-}
 .prd-btn{
     padding: 10px 15px;
     color: yellowgreen;
@@ -17,17 +10,22 @@ img.card-img-top {
     text-transform: capitalize;
     transition: .5s;
 }
-a.prd-btn.card-link:hover{
+a.prd-btn:hover{
     background-color: yellowgreen;
     color: black;
     transition: .5s;
 }
-a.prd-btn.inventory-btn {
-    padding: 20px 20px;
-    font-size: 24px;
+.manageInventory-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-a.prd-btn.inventory-btn:hover {
-    background-color: yellowgreen;
-    color: black;
-    transition: .5s;
+@media only screen and (max-width: 700px) {
+    .manageInventory-content{
+        display: block;
+        text-align: center;
+    }
+    .manageAdd.text-center {
+        margin-top: 34px;
+    }
 }

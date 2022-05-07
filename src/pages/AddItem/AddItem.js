@@ -1,4 +1,5 @@
 import React from 'react';
+import './AddItem.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
@@ -37,50 +38,56 @@ const AddItem = () => {
     })
   };
   return (
-    <div className="mb-5">
-      <h2 className="text-center fs-4 text-secondary my-3">Add New Item</h2>
-      <div className="addItem-form w-25 mx-auto shadow">
-      <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
-        {/* <input className="mb-3" value={user.displayName} readOnly disabled />
-        <input className="mb-3" value={user.email} readOnly disabled /> */}
-        <input className="mb-3" placeholder="Product Name" {...register("name")} />
+    <div className=" container my-5">
+      <div className="add-item">
+      <h2 className="text-center ">Add New Item</h2>
+      <div className="addItem-form  mx-auto shadow">
+      <form className="d-flex flex-column " onSubmit={handleSubmit(onSubmit)}>
+        <input className="mb-3" placeholder="Product Name" {...register("name")} required />
         <input
           className="mb-3"
           placeholder="Img URL"
           type="text"
           {...register("img")}
+          required
         />
         <textarea
           className="mb-3"
           placeholder="Description"
           {...register("description")}
+          required
         />
         <input
           className="mb-3"
           placeholder="Price"
           type="number"
           {...register("price")}
+          required
         />
         <input
           className="mb-3"
           placeholder="Quantity"
           type="number"
           {...register("quantity")}
+          required
         />
         <input
           className="mb-3"
           placeholder="Supplier Name"
           type="text"
           {...register("supplier_name")}
+          required
         />
         <input
           className="mb-3"
           placeholder="Sold"
           type="text"
           {...register("sold")}
+          required
         />
-        <input className=" " type="submit" value="Add Item" />
+        <input className="add-btn" type="submit" value="Add Item" />
       </form>
+      </div>
       </div>
     </div>
   );
