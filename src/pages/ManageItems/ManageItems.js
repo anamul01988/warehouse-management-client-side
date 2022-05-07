@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card } from "react-bootstrap";
 
@@ -50,9 +51,7 @@ const ManageItems = () => {
           </div>
           </div>
 
-          {/* <div className="manage-content text-center mb-3">
-          <button onClick={() => handleDelete(product._id)}>Delete</button>
-          </div> */}
+       
         </div>
       ))}
     </div>
@@ -60,3 +59,4 @@ const ManageItems = () => {
 };
 
 export default ManageItems;
+
