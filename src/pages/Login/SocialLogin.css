@@ -1,8 +1,21 @@
 .social-btn button{
-    width: 50%;
+    /* width: 50%; */
 }
+span.px-2.google-btn {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    font-family: 'Poppins',sans-serif;
+}
+
 @media only screen and (max-width: 500px) {
      .social-btn button{
          width: 100%;
      }
   }
+@media only screen and (max-width: 1000px) {
+    span.px-2.google-btn {
+        font-size: 18px;
+        width: 100%;
+    }
+    }

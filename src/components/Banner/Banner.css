@@ -62,11 +62,13 @@
     margin-left: 100px;
 }
 
-.carousel-btn{
+.carousel-btn {
     text-align: left;
-    padding: 10px 15px;
-    color : black;
-    background-color: white;
+    padding: 8px 13px;
+    color: yellowgreen;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
 }
 .carousel-caption button{
     text-align: left;

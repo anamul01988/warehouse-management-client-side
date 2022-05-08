@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import './Login.css';
 import { Button } from "react-bootstrap";
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -59,8 +60,9 @@ const Login = () => {
 
 
   return (
-    <div className="my-5">
-      <form onSubmit={handleLoginForm} className="w-50 mx-auto">
+    <div className="container my-5">
+      <h4>Login Form</h4>
+      <form onSubmit={handleLoginForm} className="login-form">
         <div className="mb-3">
           <input
             type="email"

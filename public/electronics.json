@@ -1,56 +1,75 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-        "price": "300",
-        "quantity" : "20",
-        "supplier_name": "Rahim Mia",
-        "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "name": "Digital Camera",
+        "price": "60,000",
+        "quantity" : "80",
+        "supplier_name": "Munshi Rakib",
+        "short_description": "Night vision Camera has launched recently. It has appeared with best perfomance.",
+        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg",
+        "sold": "13"
     },
+    
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
+        "name": "Mobile Phones",
         "price": "100",
         "quantity" : "30",
         "supplier_name": "Ismail Gazi",
-        "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "short_description": "China recently launched this phone . That has some unique feature with perfomence.",
+        "img": "https://transvelo.github.io/electro-html/2.0/assets/img/212X200/img4.jpg",
+        "sold": "4"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
+        "name": "Wireless Audio Recorder",
         "price": "150",
         "quantity" : "50",
         "supplier_name": "Kashem Ali",
-        "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "short_description": "Ultimate luxurious electronic product that is developer by walton. It has upgraded sound feature.",
+        "img": "https://transvelo.github.io/electro-html/2.0/assets/img/212X200/img1.jpg",
+        "sold": "20"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
+        "name": "Digital Camera",
         "price": "180",
         "quantity" : "70",
         "supplier_name": "Abdul Zalil",
         "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "img": "https://transvelo.github.io/electro-html/2.0/assets/img/190X150/img1.png",
+        "sold": "50"
     },
+  
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
-        "price": "100",
-        "quantity" : "10",
-        "supplier_name": "Rahmat Mia",
-        "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "name": "Laptop",
+        "price": "90,000",
+        "quantity" : "200",
+        "supplier_name": "Rahim Mia",
+        "short_description": "This Laptop has super demand right now. It has appeared with best perfomance.",
+        "img": "https://transvelo.github.io/electro-html/2.0/assets/img/212X200/img2.jpg",
+        "sold": "13"
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
+        "name": "CC camera",
         "price": "300",
         "quantity" : "50",
         "supplier_name": "Anamul Haque",
-        "short_description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "http://ledthanhdat.vn/html/dagon/assets/images/product/p9.jpg"
+        "short_description": "This camera has AI technology that can detect criminal activities. ",
+        "img": "http://ledthanhdat.vn/html/kobolg/assets/images/apro71-1-270x350.jpg",
+        "sold": "35"
+    },
+    {
+        "id": 7,
+        "name": "HeadPhone",
+        "price": "100",
+        "quantity" : "100",
+        "supplier_name": "Rahmat Mia",
+        "short_description": "This headset is totally new for amazing customer who love listening song and use long time.",
+        "img": "http://ledthanhdat.vn/html/kobolg/assets/images/banner13.jpg",
+        "sold": "33"
     }
+   
 ]

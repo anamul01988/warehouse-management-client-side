@@ -1,4 +1,7 @@
-
+img {
+    width: 200px;
+    height: auto;
+}
 .prd-btn{
     padding: 10px 15px;
     color: yellowgreen;
