@@ -14,25 +14,25 @@ const Subscription = () => {
         <div className='container-full bg-dark text-light'>
             <div className="container subscription py-4">
                 <div className="row d-flex align-items-center ">
-                    <div className="col-md-6 col-lg-4">
+                    <div className=" col-12 col-md-6 col-lg-4">
                        <div className="news-content d-flex align-items-center">
                        <div className="news-icon">
                             <MdOutlineMarkEmailRead className='icon'/>
                         </div>
                         <div className="news-content">
-                            <h4>Fear of missing <br />out?</h4>
+                            <h4>Fear of missing out?</h4>
                             <p>Get the latest deals, <br />updates & more</p>
                         </div>
                        </div>
                     </div>
-                    <div className="col-md-6 col-lg-4 content" >
+                    <div className="col-12 col-md-6 col-lg-4 content" >
                         <div className="email-content  d-flex">
                            <input type="text" placeholder='your email address'/>
                            <button className=''>Subscribe <AiOutlineRight className='subs-icon'/></button>
                         </div>
                        
                     </div>
-                    <div className=" col-md-6 col-lg-4 content">
+                    <div className="col-12 col-md-6 col-lg-4 content">
                         <div className="social-icons">
                             <p>Follows us</p>
                             <ul>

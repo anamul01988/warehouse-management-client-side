@@ -7,7 +7,7 @@ const Footer = () => {
        <>
         <div className='container'>
             <div className="row footer-main">
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                     <h4 className='list-title'>Company</h4>
                     <ul className='list-item'>
                         <li><Link to="">About Us</Link></li>
@@ -17,7 +17,7 @@ const Footer = () => {
                         <li><Link to="">Contact Us</Link></li>
                     </ul>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                     <h4 className='list-title'>Products</h4>
                     <ul className='list-item'>
                         <li><Link to="">Televisions</Link></li>
@@ -29,7 +29,7 @@ const Footer = () => {
                         <li><Link to="">Mobile Phones</Link></li>
                     </ul>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                     <h4 className='list-title'>Help</h4>
                     <ul className='list-item'>
                         <li><Link to="">Customer Service</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <li><Link to="">Gift Card</Link></li>
                     </ul>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                     <h4 className='list-title'>Contact Info</h4>
                     <ul className='list-item'>
                         <li><Link to="">+880 1234567873</Link></li>
