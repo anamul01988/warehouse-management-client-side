@@ -1,0 +1,69 @@
+.news-icon {
+  font-size: 66px;
+  margin-right: 12px;
+}
+
+.news-content h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  line-height: 36px; /* margin-top: 8px; */
+}
+
+.news-content p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 26px;
+}
+
+.email-content input {
+  height: 60px;
+  font-size: 18px;
+  padding-left: 16px;
+  width: 100%;
+  margin-right: 10xp;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.email-content button {
+  padding: 10px 15px;
+  font-size: 15px;
+  width: 217px;
+  height: 63px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  background: #f0094cf5;
+  color: white;
+  letter-spacing: 0.6px;
+  border-radius: 10px;
+}
+
+.email-content .subs-icon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none; /* color: white; */
+}
+
+.social-icons svg {
+  color: #c7d4e1;
+  font-size: 28px; /* border: 1px solid #fff; */
+}
+
+.social-icons p {
+  text-align: center;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .content{
+        margin-top: 30px;
+    }
+}
