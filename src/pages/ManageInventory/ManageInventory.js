@@ -35,7 +35,7 @@ const ManageInventory = () => {
                   <td>{product.name}</td>
                   <td>{product.quantity}</td>
                   <td>
-                    <img className="" src={product.img} alt="img" />
+                    <img className="table-img" src={product.img} alt="img" />
                   </td>
                   <td>{product.price}</td>
                   <td>{product.supplier_name}</td>

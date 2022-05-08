@@ -9,7 +9,7 @@ const MyItemsDetail = ({ item }) => {
  
       <div className="col-lg-4 col-md-6 col-12 mx-auto shadow mb-4">
         <Card className="" >
-          <Card.Img variant="top" src={img} />
+          <Card.Img className="shadow" variant="top" src={img} />
           <Card.Body>
             <Card.Title>Name : {name}</Card.Title>
             <Card.Text>Quantity :  {quantity}</Card.Text>

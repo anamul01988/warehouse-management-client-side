@@ -15,8 +15,8 @@ const navigate = useNavigate();
       {/* <h1>{product.id}</h1>
             <h3>{product.name}</h3> */}
             {/* style={{ width: "18rem" }} */}
-      <Card className="shadow mb-4 " >
-        <Card.Img variant="top" src={img} />
+      <Card className="shadow product-card mb-4 " >
+        <Card.Img className="shadow" variant="top" src={img} />
         <Card.Body >
           <Card.Title>Name : {name}</Card.Title>
           <Card.Text>Quantity : {quantity }</Card.Text>

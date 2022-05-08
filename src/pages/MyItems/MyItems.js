@@ -25,7 +25,7 @@ const MyItems = () => {
   // }, [user.email])
   return (
     <div className="container">
-      <h2 className="text-capitalize text-center text-dark mt-5 fs-4 ">my items</h2>
+      <h2 className="text-capitalize text-center mt-5 mb-3 fs-4 text-secondary ">my items</h2>
       <div className="row ">
         {newProducts.map((product) => (
           <MyItemsDetail item={product} />
