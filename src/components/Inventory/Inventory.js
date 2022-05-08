@@ -7,12 +7,11 @@ const Inventory = () => {
   const { inventoryId } = useParams();
   const [inventory] = useProductDetail(inventoryId);
 
-  const reducedQuantity= (quantity) =>{
-      console.log('added',quantity-1)
-      let quantities = quantity -1;
-      return quantities;
-   
-  }
+  const reducedQuantity = (quantity) => {
+    console.log("added", quantity - 1);
+    let quantities = quantity - 1;
+    return quantities;
+  };
   return (
     <div className="container">
       <div className="selected-product w-50 mx-auto my-5">
@@ -20,22 +19,41 @@ const Inventory = () => {
                <h3>{product.name}</h3> */}
         <Card className="shadow">
           <Card.Img variant="top" src={inventory.img} />
-          <Card.Body >
+          <Card.Body>
             <Card.Title>Name : {inventory.name}</Card.Title>
-            <Card.Text>Quantity :  {inventory.quantity}</Card.Text>
+            <Card.Text>Quantity : {inventory.quantity}</Card.Text>
             <Card.Text>Price : $ {inventory.price}</Card.Text>
-            <Card.Text> Desc :  {inventory.short_description}</Card.Text>
-            <Card.Text> Supplier :  {inventory.supplier_name}</Card.Text>
+            <Card.Text> Desc : {inventory.short_description}</Card.Text>
+            <Card.Text> Supplier : {inventory.supplier_name}</Card.Text>
           </Card.Body>
 
           <Card.Body>
-            <Card.Link onClick={()=> reducedQuantity(inventory.quantity)} className="prd-btn">Delivered</Card.Link>
+            <Card.Link
+              onClick={() => reducedQuantity(inventory.quantity)}
+              className="prd-btn"
+            >
+              Delivered
+            </Card.Link>
           </Card.Body>
+       
         </Card>
+        <div className="input-group input-group-lg mt-5">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Restock Quantity
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
       </div>
-       <div className="text-center py-5">
-       <Link to="/manage_inventory" className="prd-btn inventory-btn">Manage Inventory</Link>
-       </div>
+      <div className="text-center py-5">
+        <Link to="/manage_inventory" className="prd-btn inventory-btn">
+          Manage Inventory
+        </Link>
+      </div>
     </div>
   );
 };

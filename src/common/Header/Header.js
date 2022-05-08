@@ -30,7 +30,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">
-                <Link className="nav-link link" aria-current="page" to="home">
+                <Link  className="nav-link link" aria-current="page" to="home">
                   Home
                 </Link>
               </li>

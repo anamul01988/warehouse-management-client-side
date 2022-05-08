@@ -3,8 +3,9 @@ import { Card } from "react-bootstrap";
 
 const MyItemsDetail = ({ item }) => {
   console.log(item);
-  const { name, img, quantity, price, description, supplier_name, sold, email } =
+  const {  name, img, quantity, price, description, supplier_name, sold, email } =
     item;
+
   return (
  
       <div className="col-lg-4 col-md-6 col-12 mx-auto shadow mb-4">
@@ -18,6 +19,7 @@ const MyItemsDetail = ({ item }) => {
             <Card.Text>Supplier :  {supplier_name}</Card.Text>
             <Card.Text>Sold :  {sold}</Card.Text>
             <Card.Text>User-Mail :  {email}</Card.Text>
+          
           </Card.Body>
         </Card>
       </div>

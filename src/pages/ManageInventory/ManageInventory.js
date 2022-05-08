@@ -25,6 +25,7 @@ const ManageInventory = () => {
               <th className="text-center">Price</th>
               <th className="text-center">Supplier Name</th>
               <th className="text-center">Description</th>
+              <th className="text-center">Sold</th>
               <th className="text-center">Action</th>
             </tr>
           </thead>
@@ -40,6 +41,7 @@ const ManageInventory = () => {
                   <td>{product.price}</td>
                   <td>{product.supplier_name}</td>
                   <td>{product.short_description}</td>
+                  <td>{product.sold}</td>
                   <td>
                     <div className="d-flex">
                       <Link
