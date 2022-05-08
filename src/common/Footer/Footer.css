@@ -1,0 +1,44 @@
+.footer-main {
+  padding-top: 50px;
+}
+h4.list-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul.list-item {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: #5d5252;
+  font-size: 17px;
+  text-align: left;
+  line-height: 41px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+.footer-bottom {
+  background: black;
+}
+.footer h3 {
+    font-size: 15px;
+    margin-right: 20px;
+    font-family: "poppins", sans-serif;
+    color: #ded9d9;
+}
+
+.footer-span {
+  letter-spacing: 1px;
+  color: #d4a414!important;
+}
+@media only screen and (max-width: 500px) {
+  .footer h3 {
+    font-size: 12px;
+  }
+}

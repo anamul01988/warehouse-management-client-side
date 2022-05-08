@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
+import Footer from "./common/Footer/Footer";
 import Header from "./common/Header/Header";
 import NotFound from "./common/NotFound/NotFound";
 import RequireAuth from "./common/RequireAuth/RequireAuth";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/register" element={<Register/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
       <ToastContainer/>
     </div>
   );
