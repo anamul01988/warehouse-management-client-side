@@ -11,7 +11,7 @@ const ManageItems = () => {
   const handleDelete = (id) => {
     const isAllow = window.confirm("Are you sure ?");
     if (isAllow) {
-      const url = `http://localhost:5000/inventory/${id}`;
+      const url = `https://damp-dusk-59308.herokuapp.com/inventory/${id}`;
       fetch(url, {
         method: "DELETE",
       })

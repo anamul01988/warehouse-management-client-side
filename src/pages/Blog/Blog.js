@@ -35,6 +35,13 @@ const Blog = () => {
           <Card.Title>What is the purpose of JWT and How does it work?</Card.Title>
           <Card.Text>
           JWT that is called JSON Web Token, is an open standard mechanism used to share security information between two client and server. Mainly it is identify the owner of json data.
+        <br />
+        Working procedure : <br /> 1. A JWT is a string that is made up by three parts . Also, separated by dots (.). It is  serialized by using base64. In the most common serialization format, compact serialization, the JWT looks something like this: a.b.c.
+         <br /> 2. After decoded, JWT will provide us two JSON strings:
+          such as the header and the payload nad the signature. 
+         <br /> 3. Header contains the type of token, Payload contains the claim that is displayed as a string. 
+          it is usually containing no more than a dozen fields to keep the JWT compact. So that this information is typically used by the server to verify that the user has permission to perform the action they are requesting.
+         <br /> 4.The signature ensures that the token hasn’t been altered. The party creates JWT signs the header and payload with a secret that is known to both the issuer and receiver,  When the token is used, the receiving party verifies that the header and payload match the signature. 
           </Card.Text>
         </Card.Body>
       </Card>

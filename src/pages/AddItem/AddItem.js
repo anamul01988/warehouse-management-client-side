@@ -18,8 +18,8 @@ const AddItem = () => {
   //     // address : event.target.address.value,
   //     // phone: event.target.phone.value
   // }
-    // const url = (`http://localhost:5000/inventory`, order);
-    const url = 'http://localhost:5000/inventory';
+    // const url = (`https://damp-dusk-59308.herokuapp.com/inventory`, order);
+    const url = 'https://damp-dusk-59308.herokuapp.com/inventory';
    console.log(data)
     fetch((url),{
         method: 'POST',
@@ -103,7 +103,7 @@ export default AddItem;
 //   const { register, handleSubmit } = useForm();
 //   const onSubmit = (data) => {
 //     // console.log(data);
-//     const url = `http://localhost:5000/inventory`;
+//     const url = `https://damp-dusk-59308.herokuapp.com/inventory`;
 //     fetch(url,{
 //         method: 'POST',
 //         headers: {

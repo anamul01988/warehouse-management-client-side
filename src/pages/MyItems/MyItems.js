@@ -16,7 +16,7 @@ const MyItems = () => {
   //    const getMyItems = () =>{
   //        const email = user.email;
   //        console.log(email)
-  //        const url = `http://localhost:5000/myitem?email=${email}`;
+  //        const url = `https://damp-dusk-59308.herokuapp.com/myitem?email=${email}`;
   //        fetch(url)
   //        .then(res => res.json())
   //        .then(data => setProducts(data))
